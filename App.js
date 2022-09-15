@@ -21,7 +21,7 @@ LTI update could not be added via codemod
 
 const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }} >
+    <SafeAreaView>
       <GestureHandlerRootView>
         <Home />
       </GestureHandlerRootView>
