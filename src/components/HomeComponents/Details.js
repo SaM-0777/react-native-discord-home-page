@@ -1,14 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { View, Text } from 'react-native';
+
+import { RoomBody, RoomHeader, DirectMessageBody, DirectMessageHeader } from './Fragments';
+
 
 const Details = () => {
   return (
     <View>
-      <Text>
-         
-      </Text>
+
     </View>
   )
-}
+};
 
-export default Details
+
+export default Details;
+

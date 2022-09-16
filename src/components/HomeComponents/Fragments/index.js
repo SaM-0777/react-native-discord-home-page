@@ -1,4 +1,5 @@
 import { DirectMessageTab, CreateServerTab, JoinServerTab, ServerTab } from "./RoomListFragments";
+import { RoomBody, RoomHeader, DirectMessageBody, DirectMessageHeader } from "./DetailsFragments";
 
 
 export {
@@ -6,5 +7,9 @@ export {
     CreateServerTab,
     JoinServerTab,
     ServerTab,
+    RoomBody,
+    RoomHeader,
+    DirectMessageBody,
+    DirectMessageHeader,
 };
 
