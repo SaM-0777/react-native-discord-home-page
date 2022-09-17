@@ -10,7 +10,7 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, View, } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import { Home } from './src/screens';
+import { Home, Chat } from './src/screens';
 
 
 /*
@@ -21,13 +21,12 @@ LTI update could not be added via codemod
 
 const App = ({  }) => {
   return (
-    <SafeAreaView style={styles.main} >
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <View style={styles.container} >
-          <Home />
-        </View>
-      </GestureHandlerRootView>
-    </SafeAreaView>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <View style={styles.container} >
+        {/*<Home />*/}
+        <Chat />
+      </View>
+    </GestureHandlerRootView>
   )
 };
 

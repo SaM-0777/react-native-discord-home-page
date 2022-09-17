@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 
+import data from '../../../../utils/data';
+
 
 const DirectMessageBody = ({ }) => {
   return (
@@ -9,9 +11,9 @@ const DirectMessageBody = ({ }) => {
         return (
           <TouchableOpacity activeOpacity={0.9} key={index} style={styles.tab} >
             <View>
-              <Image source={require(`../../../../assets/images/person-${index + 1}.jpg`)} resizeMode={'cover'} style={styles.image} />
+              <Image source={data[index].image} resizeMode={'cover'} style={styles.image} />
             </View>
-            <Text style={styles.text} >John Doe</Text>
+            <Text style={styles.text} >{data[index].username}</Text>
           </TouchableOpacity>
         )
       })}
