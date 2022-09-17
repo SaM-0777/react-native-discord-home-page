@@ -3,11 +3,14 @@ import { View, Text } from 'react-native';
 
 import { RoomBody, RoomHeader, DirectMessageBody, DirectMessageHeader } from './Fragments';
 
+import { detailsStyle } from './Styles';
 
-const Details = () => {
+
+const Details = ({  }) => {
   return (
-    <View>
-
+    <View style={detailsStyle.container} >
+      <DirectMessageHeader />
+      <DirectMessageBody />
     </View>
   )
 };

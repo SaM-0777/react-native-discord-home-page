@@ -8,10 +8,18 @@ export default styles = StyleSheet.create({
         alignItems: 'center',
     },
     container: {
-        
+        marginTop: 5,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
     },
     section: {
 
+    },
+    roomListContainer: {
+        flex: 0.2,
+    },
+    detailsContainer: {
+        flex: 0.6,
     },
 });
 

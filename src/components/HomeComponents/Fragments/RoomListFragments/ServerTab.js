@@ -39,7 +39,7 @@ const ServerTab = ({ image }) => {
 
   /*const postData = async () => {
     try {
-      const response = await fetch('http://localhost:8800/api/camp/', {
+      const response = await fetch('https://soorveer-api.herokuapp.com/api/camp', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
@@ -58,11 +58,11 @@ const ServerTab = ({ image }) => {
     } catch (error) {
       console.log(error)
     }
-  }
+  }*/
 
-  const getData = async () => {
+  /*const getData = async () => {
     try {
-      const response = await fetch('http://localhost:8800/api/donar/', {
+      const response = await fetch('https://soorveer-api.herokuapp.com/api/camp', {
         method: 'GET',
       })
       const data = await response.json()
@@ -98,8 +98,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#222',
   },
   image: {
-    width: 60,
-    height: 60,
+    width: 50,
+    height: 50,
   },
 });
 

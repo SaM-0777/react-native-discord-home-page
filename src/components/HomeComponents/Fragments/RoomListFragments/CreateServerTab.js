@@ -9,8 +9,8 @@ const CreateServerTab = () => {
   }
 
   return (
-    <TouchableOpacity activeOpacity={0.9} onPress={onPress} style={[styles.container, { backgroundColor: '#0EE400' }]} >
-      <Ionicons name={'add'} size={25} color={'#FFF'} />
+    <TouchableOpacity activeOpacity={0.9} onPress={onPress} style={[styles.container, { backgroundColor: '#FFF' }]} >
+      <Ionicons name={'add'} size={25} color={'#0EE400'} />
     </TouchableOpacity>
   )
 };
@@ -18,8 +18,8 @@ const CreateServerTab = () => {
 
 const styles = StyleSheet.create({
   container: {
-    width: 60,
-    height: 60,
+    width: 50,
+    height: 50,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 100,
