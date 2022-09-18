@@ -4,22 +4,25 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 const Header = () => {
+  const onPress = () => {
+    console.log('Pressed')
+  }
   return (
     <View style={styles.container} >
       <View style={styles.leftContainer} >
-        <TouchableOpacity activeOpacity={0.9} >
+        <TouchableOpacity activeOpacity={0.9} onPress={onPress} >
           <Ionicons name={'menu'} size={27} color={'#6E6E6E'} />
         </TouchableOpacity>
         <Text style={styles.text} >@   SuyashNK</Text>
       </View>
       <View style={styles.rightContainer} >
-        <TouchableOpacity activeOpacity={0.9} style={styles.iconContainer} >
+        <TouchableOpacity activeOpacity={0.9} onPress={onPress} style={styles.iconContainer} >
           <Ionicons name={'call'} size={22} color={'#6E6E6E'} />
         </TouchableOpacity>
-        <TouchableOpacity activeOpacity={0.9} style={styles.iconContainer} >
+        <TouchableOpacity activeOpacity={0.9} onPress={onPress} style={styles.iconContainer} >
           <Ionicons name={'videocam'} size={22} color={'#6E6E6E'} />
         </TouchableOpacity>
-        <TouchableOpacity activeOpacity={0.9} style={styles.iconContainer} >
+        <TouchableOpacity activeOpacity={0.9} onPress={onPress} style={styles.iconContainer} >
           <Ionicons name={'people'} size={22} color={'#6E6E6E'} />
         </TouchableOpacity>
       </View>

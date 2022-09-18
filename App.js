@@ -10,7 +10,7 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, View, } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import { Home, Chat } from './src/screens';
+import { AppStack } from './src/Navigation';
 
 
 /*
@@ -23,8 +23,7 @@ const App = ({  }) => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <View style={styles.container} >
-        {/*<Home />*/}
-        <Chat />
+        <AppStack />
       </View>
     </GestureHandlerRootView>
   )
